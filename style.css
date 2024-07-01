@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.top {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url('sss.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.top .overlay {
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: whitesmoke;
+    bottom: 5%;
+}
+
+.text h1 {
+    font-weight: 600;
+    font-size: 4vw;
+    text-align: center; /* Center align the heading */
+}
+
+.text .image {
+    background-image: url('aaa.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 220px;
+    margin-right: 20px; /* Added margin to separate images */
+}
+
+.text .rtext {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text .rtext p {
+    font-size: 12px;
+}
+
+.bottom {
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+}
+
+.b1 {
+    width: 30%;
+    min-height: inherit;
+    background-image: url('bbb.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px; /* Added margin to separate images */
+}
+
+.b1 h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+.b1 p {
+    color: black;
+    text-align: center;
+    padding: 15px;
+}
+
+.b2 {
+    width: 30%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.b2 .up {
+    width: 1150%;
+    min-height: 45vh;
+    background-image: url('ddd.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px; /* Added margin to separate images */
+}
+
+.b2 .up h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+.b2 .up p {
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.b2 .down {
+    width: 1150%;
+    min-height: 40vh;
+    background-image: url('eee.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.b2 .down .overlay {
+    position: relative;
+    width: 100%;
+    height: 500%;
+    background-color: burlywood;
+}
+
+.b3 {
+    width: 350%;
+    min-height: inherit;
+    background-image: url('fff.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.b3 .overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 4vw 3vh;
+}
+
+.b3 .overlay p {
+    padding: 1.2vh;
+}
+
+@media (max-width: 500px) {
+    .text {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 5%;
+    }
+
+    .text h1 {
+        font-size: 5vh;
+        text-align: center;
+    }
+
+    .text .image {
+        height: 200px;
+        width: 140px;
+        margin-top: 20px;
+    }
+
+    .text .rtext {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .text .rtext p {
+        margin-top: 10px;
+    }
+
+    .icon {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .b1,
+    .b2,
+    .b3 {
+        width: 100%;
+        min-height: inherit;
+    }
+
+    .b2 .up {
+        min-height: 40vh;
+    }
+
+    .b3 {
+        background-position: left;
+    }
+}
